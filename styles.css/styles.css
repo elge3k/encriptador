@@ -33,8 +33,23 @@ body{
 .principal{
     padding: 2% 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_codificar{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 2rem;
+    border: 1px solid var(--gray2);
+    border-radius: 3px;
+    resize: vertical;
 }
 
 .campo_encriptar{
@@ -56,7 +71,6 @@ body{
 .footer{
     background-color: var(--light-blue2);
     padding: 24px;
-    color: var(--gray2);
     font-family: var(--inter);
     font-size: 1rem;
     text-align: center;
@@ -73,6 +87,11 @@ body{
     font-family: var(--inter);
 }
 
+.container-botones{
+    display: flex;
+    gap: 10px;
+}
+
 .boton_primario{
     background-color: var(--dark-blue);
     color: var(--white);
@@ -81,4 +100,6 @@ body{
 .boton_secundario{
     background-color: var(--light-blue2);
     color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
+
