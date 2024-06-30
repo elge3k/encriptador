@@ -16,8 +16,12 @@ Sin finalizar.
 ### Pendientes:
 
 ```sh
-Crear el HTML.
-Dar estilos en CSS.
 Crear las funciones.
 Publicar el proyecto en Pages.
+```
+### En curso:
+
+```sh
+Estructura y mejoras del HTML.
+Mejoras visuales en el CSS.
 ```
