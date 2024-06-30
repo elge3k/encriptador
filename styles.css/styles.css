@@ -40,10 +40,14 @@ body{
 .contenido{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
+
+/*Campo para Input*/
 .input_codificar{
-    width: 100%;
+    width: 60%;
     height: 150px;
     padding: 10px;
     font-size: 2rem;
@@ -52,11 +56,22 @@ body{
     resize: vertical;
 }
 
-.campo_encriptar{
-    width: 60%;
-    display: flex;
-
+.input_codificar::placeholder{
+    color: var(--dark-blue);
 }
+
+.input_codificar:focus::placeholder{
+    color: var(--gray1);
+}
+
+.campo_encriptar{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 
 .texto_encriptar{
     text-align: center;
@@ -64,8 +79,13 @@ body{
 }
 
 .texto_encriptado{
-    color: var(--gray1);
-    text-align: left;
+    width: 30%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid var(--gray2);
+    border-radius: 3px;
+    background-color: var(--light-blue2);
+    color: var(--gray2);
 }
 
 .footer{
