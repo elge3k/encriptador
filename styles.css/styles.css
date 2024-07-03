@@ -1,125 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
 :root{
-        --dark-blue: #0A3871;
-        --gray1: #495057;
-        --gray2: #343A40;
-        --light-blue1: #F3F5FC;
-        --light-blue2: #D8DFE8;
-        --white: #FFF;
-        --inter: "Inter", sans-serif;
+    --dark-blue: #0A3871;
+    --gray1: #495057;
+    --gray2: #343A40;
+    --light-blue1: #F3F5FC;
+    --light-blue2: #D8DFE8;
+    --white: #FFF;
+    --inter: "Inter", sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--light-blue1);
-    text-align: left;
+    font-family: var(--inter);
 }
 
-.header{
-    padding: 2% 0% 0% 15%;
+.header {
+    padding: 1% 0% 0% 1%;
 }
 
-.logo_svg{
-    width: 100px;
-    height: autopx;
+.logo_svg {
+    width: 32px;
+    height: 48px;
 }
 
-.principal{
-    padding: 2% 10%;
+.principal {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2% 10%;
 }
 
-.contenido{
+.contenido {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
 
-
-/*Campo para Input*/
-.input_codificar{
+.input_codificar {
     width: 60%;
     height: 150px;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: 1px solid var(--gray2);
-    border-radius: 3px;
-    resize: vertical;
+    border-radius: 8px;
+    resize: none;
 }
 
-.input_codificar::placeholder{
+.input_codificar::placeholder {
     color: var(--dark-blue);
 }
 
-.input_codificar:focus::placeholder{
-    color: var(--gray1);
-}
-
-.campo_encriptar{
+.mensaje_no_encontrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 20px;
     width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    gap: 20px;
+    max-width: 300px;
 }
 
+.mensaje_no_encontrado img {
+    width: 100%;
+    max-width: 150px;
+}
 
-.texto_encriptar{
+.mensaje {
     text-align: center;
-    color: var(--dark-blue);
-}
-
-.texto_encriptado{
-    width: 30%;
-    padding: 10px;
-    font-size: 1.5rem;
-    border: 1px solid var(--gray2);
-    border-radius: 3px;
-    background-color: var(--light-blue2);
     color: var(--gray2);
-}
-
-.footer{
-    background-color: var(--light-blue2);
-    padding: 24px;
-    font-family: var(--inter);
     font-size: 1rem;
-    text-align: center;
 }
 
-.botones{
-    width: 328px;
-    height: 67px;
-    cursor: pointer;
-    border-radius: 24px;
-    padding: 24px;
-    gap: 8px;
-    font-size: 1rem;
-    font-family: var(--inter);
-}
-
-.container-botones{
+.container-botones {
     display: flex;
+    margin-top: 20px;
     gap: 10px;
 }
 
-.boton_primario{
+.botones {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 24px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--inter);
+    border: none;
+}
+
+.boton_primario {
     background-color: var(--dark-blue);
     color: var(--white);
 }
 
-.boton_secundario{
+.boton_secundario {
     background-color: var(--light-blue2);
     color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
 }
 
+.footer {
+    background-color: var(--light-blue2);
+    padding: 24px;
+    font-size: 1rem;
+    text-align: center;
+}
