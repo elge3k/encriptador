@@ -5,10 +5,10 @@
     --gray1: #495057;
     --gray2: #343A40;
     --light-blue1: #F3F5FC;
-    --bg: #48cae4;
-    --des: #ade8f4;
-    --enc: #caf0f8;
-    --prim: #0096c7;
+    --bg: #282b30;
+    --des: #36393e;
+    --enc: #424549;
+    --prim: #7289da;
     --light-blue2: #D8DFE8;
     --white: #FFF;
     --inter: "Inter", sans-serif;
@@ -21,9 +21,10 @@
 }
 
 body {
-    background-color: var(--bg);
+    background: radial-gradient(circle, var(--enc) 0%, var(--des) 40%, var(--des) 60%, var(--bg) 100%);
     font-family: var(--inter);
 }
+
 
 .header {
     padding: 1% 0% 0% 1%;
@@ -58,7 +59,7 @@ body {
     border: none;
     resize: none;
     margin-right: 100px;
-    background-color: var(--enc);
+    background-color: var(--light-blue1);
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ body {
     align-items: center;
     justify-content: center; /* Centrar vertical y horizontalmente */
     gap: 10px;
-    background-color: var(--des);
+    background-color: var(--light-blue1);
     border-radius: 32px;
     padding: 20px;
     height: 644px;
@@ -93,7 +94,7 @@ body {
     text-align: center; /* Centrar texto horizontalmente */
     word-wrap: break-word; /* Ajustar palabras largas */
     overflow-wrap: break-word; /* Ajustar palabras largas */
-    overflow: auto; /* Añadir barras de desplazamiento si el contenido se desborda */
+    overflow:scroll; /* Añadir barras de desplazamiento si el contenido se desborda */
 }
 
 .mensaje {
@@ -138,7 +139,7 @@ body {
 }
 
 .boton_secundario {
-    background-color: var(--enc);
+    background-color: var(--light-blue2);
     color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
 }

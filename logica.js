@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const textarea = document.querySelector('.input_codificar');
     const output = document.querySelector('.mensaje_no_encontrado .mensaje');
-    const personaImg = document.querySelector('.mensaje_no_encontrado .imagen_persona');
     const encriptarButton = document.querySelector('.boton_primario');
     const desencriptarButton = document.querySelector('.boton_secundario');
 
@@ -21,14 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
     encriptarButton.addEventListener('click', function() {
         const texto = textarea.value.toLowerCase(); // Convertir texto a minúsculas
         const textoEncriptado = encriptarTexto(texto);
-        personaImg.classList.add('imagen_oculta'); // Ocultar la imagen
         output.innerHTML = textoEncriptado; // Mostrar el texto encriptado en el output
     });
 
     desencriptarButton.addEventListener('click', function() {
         const texto = textarea.value.toLowerCase(); // Convertir texto a minúsculas
         const textoDesencriptado = desencriptarTexto(texto);
-        personaImg.classList.add('imagen_oculta'); // Ocultar la imagen
         output.innerHTML = textoDesencriptado; // Mostrar el texto desencriptado en el output
     });
 
