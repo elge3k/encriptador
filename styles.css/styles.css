@@ -5,6 +5,9 @@
     --gray1: #495057;
     --gray2: #343A40;
     --light-blue1: #F3F5FC;
+    --bg: #48cae4;
+    --des: #ade8f4;
+    --enc: #caf0f8;
     --light-blue2: #D8DFE8;
     --white: #FFF;
     --inter: "Inter", sans-serif;
@@ -17,7 +20,7 @@
 }
 
 body {
-    background-color: var(--light-blue1);
+    background-color: var(--bg);
     font-family: var(--inter);
 }
 
@@ -41,7 +44,7 @@ body {
 .contenido {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:flex-start;
     gap: 20px;
 }
 
@@ -50,10 +53,16 @@ body {
     height: 350px;
     padding: 10px;
     font-size: 1.2rem;
-    border: 1px solid var(--gray2);
     border-radius: 8px;
+    border: none;
     resize: none;
     margin-right: 150px;
+    background-color: var(--enc);
+}
+
+.input_codificar:focus{
+    outline: none;
+    
 }
 
 .input_codificar::placeholder {
@@ -65,7 +74,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: var(--white);
+    background-color: var(--des);
     border-radius: 32px;
     padding: 20px;
     height: 644px;
