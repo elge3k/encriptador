@@ -17,7 +17,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -27,7 +26,7 @@ body {
 
 
 .header {
-    padding: 1% 0% 0% 1%;
+    padding: 3% 0% 0% 1%;
 }
 
 .logo_svg {
@@ -46,7 +45,7 @@ body {
 .contenido {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items:center;
     gap: 20px;
 }
 
@@ -134,10 +133,6 @@ body {
     color: var(--white);
 }
 
-.boton_primario:hover{
-    border: solid #000;
-}
-
 .boton_secundario {
     background-color: var(--light-blue2);
     color: var(--dark-blue);
@@ -149,6 +144,7 @@ body {
     padding: 24px;
     font-size: 1rem;
     text-align: center;
+    color: var(--light-blue1);
 }
 
 
