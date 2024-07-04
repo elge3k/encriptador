@@ -16,12 +16,19 @@ Sin finalizar.
 ### Pendientes:
 
 ```sh
-Crear las funciones.
-Publicar el proyecto en Pages.
+Diseño responsivo.
 ```
 ### En curso:
 
 ```sh
-Estructura y mejoras del HTML.
 Mejoras visuales en el CSS.
 ```
+
+### Finalizado:
+```sh
+Lógica de encriptación, desencriptación y uso solo de minúsculas.
+Estructura y mejoras del HTML.
+```
+
+### Proyecto publicado en Vercel:
+<https://encriptador-flax-beta.vercel.app/>
