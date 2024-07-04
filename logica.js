@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function encriptarTexto(texto) {
         // Reemplazar vocales según las reglas especificadas
-        let textoEncriptado = texto.replace(/a/g, 'enter');
-        textoEncriptado = textoEncriptado.replace(/e/g, 'imes');
-        textoEncriptado = textoEncriptado.replace(/i/g, 'ai');
+        let textoEncriptado = texto.replace(/a/g, 'ai');
+        textoEncriptado = textoEncriptado.replace(/e/g, 'enter');
+        textoEncriptado = textoEncriptado.replace(/i/g, 'imes');
         textoEncriptado = textoEncriptado.replace(/o/g, 'ober');
         textoEncriptado = textoEncriptado.replace(/u/g, 'ufat');
         
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Revertir el proceso de encriptación
         let textoDesencriptado = texto.replace(/ufat/g, 'u');
         textoDesencriptado = textoDesencriptado.replace(/ober/g, 'o');
-        textoDesencriptado = textoDesencriptado.replace(/ai/g, 'i');
-        textoDesencriptado = textoDesencriptado.replace(/imes/g, 'e');
-        textoDesencriptado = textoDesencriptado.replace(/enter/g, 'a');
+        textoDesencriptado = textoDesencriptado.replace(/imes/g, 'i');
+        textoDesencriptado = textoDesencriptado.replace(/enter/g, 'e');
+        textoDesencriptado = textoDesencriptado.replace(/ai/g, 'a');
         
         return textoDesencriptado;
     }
