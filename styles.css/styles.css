@@ -147,4 +147,15 @@ body {
     color: var(--light-blue1);
 }
 
+@media (max-width: 720px) {
+     .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .mensaje_no_encontrado{
+        margin-right: 150px;
+     }
+}
+
 
