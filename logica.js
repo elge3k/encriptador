@@ -31,26 +31,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function encriptarTexto(texto) {
         // Reemplazar vocales según las reglas especificadas
-        let textoEncriptado = texto.replace(/a/g, 'ai');
-        textoEncriptado = textoEncriptado.replace(/e/g, 'enter');
-        textoEncriptado = textoEncriptado.replace(/i/g, 'imes');
-        textoEncriptado = textoEncriptado.replace(/o/g, 'ober');
-        textoEncriptado = textoEncriptado.replace(/u/g, 'ufat');
+        texto = texto.replace(/e/g, 'enter');
+        texto = texto.replace(/i/g, 'imes');
+        texto = texto.replace(/a/g, 'ai');
+        texto = texto.replace(/o/g, 'ober');
+        texto = texto.replace(/u/g, 'ufat');
         
-        return textoEncriptado;
+        return texto;
     }
 
     function desencriptarTexto(texto) {
         // Revertir el proceso de encriptación
-        let textoDesencriptado = texto.replace(/ufat/g, 'u');
-        textoDesencriptado = textoDesencriptado.replace(/ober/g, 'o');
-        textoDesencriptado = textoDesencriptado.replace(/imes/g, 'i');
-        textoDesencriptado = textoDesencriptado.replace(/enter/g, 'e');
-        textoDesencriptado = textoDesencriptado.replace(/ai/g, 'a');
+        texto = texto.replace(/ufat/g, 'u');
+        texto = texto.replace(/ober/g, 'o');
+        texto = texto.replace(/imes/g, 'i');
+        texto = texto.replace(/enter/g, 'e');
+        texto = texto.replace(/ai/g, 'a');
         
-        return textoDesencriptado;
+        return texto;
     }
 });
+
 
 
 
